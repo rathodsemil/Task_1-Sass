@@ -1,0 +1,100 @@
+@import 'vairable';
+
+@mixin position {
+    display: $d-$d-flex;
+    justify-content: $justify-center;
+    align-items: $align-center;
+}
+
+.container{
+  margin: 30px;
+
+  .navigation{
+    display: $d-$d-flex;
+    justify-content: $justify-between;
+  }
+  .navitems ul{
+    list-style-type: none;
+    display: $d-$d-flex;
+    li a{
+      color:$color1;
+      margin-left:$ml-1;
+      text-decoration: none;
+      &:hover{
+        color:$f-c3;
+      }
+    }
+  }
+  .menu{
+    .button{
+      height: $h-6;
+      width: $w-150;
+      display: $d-flex;
+      justify-content: $justify-center;
+      align-items: $align-center;
+      background-color: $bg1;
+      img{
+        height: $h-2; 
+        width: $w-2;
+      }
+      a{
+        text-decoration: none;
+        color: $f-c1;
+        
+      }
+    }
+  }
+}
+
+.main{
+    img{
+      width: $w-full;
+      height: $h-150;
+    }
+    .text1{
+      position:$position-ad;
+      top: 120px; left: 650px;
+      text-align: $align-center;
+      line-height: 20px;
+      color: $f-c1;
+    }
+    .new{
+      margin-top: 60px;
+      display: $d-flex;
+      justify-content: $justify-center;
+      img{
+        height: 150px;
+        width: 400px;
+      }
+    }
+    .text2{
+      display: $d-flex;
+      justify-content: $justify-center;
+      p{
+        font-size: $f-6;
+        color: $f-c2;
+      }
+      h1{
+        font-size: $f-8;
+      }
+    }
+    .button2{
+      display: $d-flex;
+      justify-content: $justify-center;
+      .one{
+        height: $h-5;
+        width: $w-170;
+        border: 0;
+        background-color: $bg1;
+        text-decoration: none;
+        color: $f-c1;
+      }
+    }
+    .img5{
+      margin-top: 20px;
+      img{
+        height: $h-full;
+        width: $w-full;
+      }
+    }
+}
